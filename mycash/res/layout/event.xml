@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical">
+  
+  <TextView
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:text="When"
+  	/>
+  <EditText android:id="@+id/when"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:inputType="datetime"
+  	/>
+  	
+  <TextView
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:text="How much"
+  	/>
+  <EditText android:id="@+id/how_much"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:inputType="number"
+  	/>
+  	
+  <TextView
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:text="Method"
+  	/>
+  <RadioGroup android:id="@+id/method"
+  	android:layout_height="wrap_content"
+  	android:layout_width="fill_parent"
+  	android:orientation="horizontal">
+      <RadioButton android:id="@+id/radio0"
+      	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:text="Cash" android:checked="true"></RadioButton>
+      <RadioButton android:id="@+id/radio1"
+      	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:text="Credit card"></RadioButton>
+  </RadioGroup>
+  	
+  <TextView
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:text="Note"
+  	/>
+  <EditText android:id="@+id/note"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	/>
+  <Button android:id="@+id/add"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="bottom"
+  	android:text="@string/add"
+  	/>
+</LinearLayout>
